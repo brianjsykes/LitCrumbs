@@ -138,7 +138,7 @@ angular.module('starter.directives', [])
               // element.show();
             });
             element.parent().bind('mouseleave', function() {
-              $scope.display = ':none';
+              $scope.display = 'none';
               // element.hide();
             });
        }
