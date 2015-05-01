@@ -1,0 +1,37 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Write</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeModal()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content style="background-image: url('img/{{fragData.type}}-bg.jpg');
+              background-position: center;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+              ">
+    <form ng-submit="postFragment()" style="filter:alpha(opacity=80);
+    opacity:0.8;">
+      <div class="list list-inset">
+        <label class="item item-input item-select item-stable">
+          <span class="input-label" style="width:80px;">Genre</span>
+          <select ng-model="fragData.type">
+            <option selected>Prose</option>
+            <option>Poem</option>
+          </select>
+        </label>
+        <label class="item item-input">
+          <span class="input-label" style="width:80px;">Title</span>
+          <input type="text" ng-model="fragData.title">
+        </label>
+        <label class="item item-input">
+          <textarea placeholder="Content" ng-model="fragData.text" style="height:200px;white-space:pre-line;" />
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Post</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

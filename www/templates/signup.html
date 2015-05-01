@@ -1,0 +1,23 @@
+<ion-view view-title="Sign-Up">
+  <ion-content>
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Name</span>
+        <input type="text" ng-model="user.personname">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Email</span>
+        <input type="email" ng-model="user.email">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Password</span>
+        <input type="password" ng-model="user.password">
+      </label>
+    </div>
+    <div class="padding">
+       <button class="button button-block button-positive" ng-click="signup()">
+        Sign-Up
+      </button>
+    </div>
+  </ion-content>
+</ion-view>

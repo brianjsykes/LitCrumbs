@@ -1,0 +1,13 @@
+<ion-view view-title="Fragments">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="fragment in fragments" href="#/app/fragments/{{fragment.id}}">
+        <div class="item item-avatar">
+          <img src="img/{{fragment.get('Type')}}-noborder.png">
+          <h2>{{fragment.get('Title')}}</h2>
+          <h4>By: {{fragment.get('AuthorName')}}</h4>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

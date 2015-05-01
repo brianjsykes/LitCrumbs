@@ -1,0 +1,9 @@
+<ion-view view-title="Map">
+  <ion-content data-tap-disabled="true" scroll="false">
+    <map on-create="mapCreated(map)"></map>
+  </ion-content>
+   <ion-footer-bar class="bar-stable">
+      <a ng-click="centerOnMe()" class="button button-icon icon ion-navigate"></a>
+      <a ng-click="newFragment()" class="button button-icon icon ion-compose"></a>
+   </ion-footer-bar>
+</ion-view>

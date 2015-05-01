@@ -1,0 +1,10 @@
+{
+  "name": "Pergola",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.0-rc.4"
+  },
+  "dependencies": {
+    "angular-touch": "~1.3.15"
+  }
+}
